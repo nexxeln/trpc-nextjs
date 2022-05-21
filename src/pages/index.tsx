@@ -5,11 +5,13 @@ export default function Name() {
 
   return (
     <>
-      {nameQuery.data ? (
-        <h1>{nameQuery.data.greeting}</h1>
-      ) : (
-        <span>Loading...</span>
-      )}
+      <div className="text">
+        {nameQuery.data ? (
+          <h1>{nameQuery.data.greeting}</h1>
+        ) : (
+          <span>Loading...</span>
+        )}
+      </div>
     </>
   );
 }
